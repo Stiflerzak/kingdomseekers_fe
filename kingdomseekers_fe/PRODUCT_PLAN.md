@@ -102,7 +102,8 @@ Next.js public site / member web app / future mobile app
 5. Who owns publishing, pastoral requests, group data, event approvals and media review.
 6. Which giving methods and projects can be shown, with verified beneficiary and financial reporting details.
 7. English/Kiswahili priority and whether another language is needed.
+8. Which verified link the default QR code should open: the branch homepage, a first-visit page, a map pin or another destination. Avoid printing QR codes before the final URL exists.
 
 ## Prototype limitations
 
-The current Next.js build is an interactive concept with sample content. Forms do not submit. Member state resets on refresh. SEO crawling is blocked until verified content and a real domain are supplied. The generated worship image is illustrative and must be replaced with approved photography for production.
+The current Next.js build is an interactive concept with sample content. Forms do not submit. Member state resets on refresh. SEO crawling is blocked until verified content and a real domain are supplied. The QR tool generates real codes, but localhost destinations are unsuitable for print or distribution. The generated worship and Rev. Simon scenes are illustrative composites and must be approved or replaced with real photography for production. The supplied SVG logo contains a small embedded raster image and is not a true vector master.

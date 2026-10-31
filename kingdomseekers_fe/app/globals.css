@@ -32,8 +32,7 @@ p{line-height:1.7}
 .live-dot{width:5px;height:5px;border-radius:50%;background:#edbe6a;box-shadow:0 0 0 4px #edbe6a25}
 .site-header{height:91px;padding:0 max(40px,calc((100vw - 1220px)/2));display:flex;align-items:center;justify-content:space-between;background:#fffdf9;position:relative;z-index:20;border-bottom:1px solid #eee9df}
 .brand{display:inline-flex;align-items:center;gap:11px;width:max-content}
-.brand-mark{width:37px;height:37px;border:1px solid var(--gold-dark);display:grid;place-items:center;transform:rotate(45deg);color:var(--gold-dark)}
-.brand-mark span{transform:rotate(-45deg);font-size:25px;line-height:1}
+.brand-logo{width:46px;height:46px;object-fit:contain;flex:none}
 .brand-words{display:flex;flex-direction:column;gap:4px}
 .brand-words strong{font-size:14px;line-height:.9;letter-spacing:.13em;font-weight:700}
 .brand-words small{font-size:7px;letter-spacing:.26em;color:var(--gold-dark);font-weight:700}
@@ -70,13 +69,14 @@ p{line-height:1.7}
 .pathway p{font-size:13px;color:#717980;line-height:1.6;max-width:280px}
 .pathway-link{display:inline-flex;gap:12px;align-items:center;color:var(--gold-dark);font-size:12px;font-weight:700;margin-top:17px}
 .feature-band{display:grid;grid-template-columns:1fr 1fr;min-height:540px;background:var(--navy);color:#fff}
-.feature-photo{position:relative;background:url('/images/worship-concept.webp') 76% center/cover no-repeat}
+.feature-photo{position:relative;background:url('/images/rev-simon-church-concept.webp') center/cover no-repeat}
 .feature-photo:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#101c2b91,transparent 50%)}
 .photo-label{position:absolute;z-index:1;bottom:30px;left:38px;font-size:9px;letter-spacing:.18em;font-weight:700}
 .feature-copy{padding:82px min(8vw,116px) 80px 85px;max-width:700px}
 .feature-copy h2{font-size:clamp(42px,4.7vw,68px)}
 .feature-copy h2 em,.discipleship h2 em,.visit h2 em{color:#e4ba79}
 .feature-copy p{color:#bfc8cc;font-size:14px;max-width:475px}
+.pastor-signature{display:flex;align-items:center;gap:12px;margin:22px 0 12px}.pastor-signature img{width:50px;height:50px;object-fit:cover;border-radius:50%;border:2px solid #e9c386}.pastor-signature strong,.pastor-signature small{display:block}.pastor-signature strong{font-size:13px}.pastor-signature small{font-size:10px;color:#c6d0d2;margin-top:3px}
 .feature-copy .text-link{margin-top:16px}
 .section-heading{display:flex;justify-content:space-between;align-items:end;gap:50px;margin-bottom:45px}
 .section-heading h2{margin-bottom:0}
@@ -88,6 +88,7 @@ p{line-height:1.7}
 .ministry-tabs button.active:after{content:'';height:2px;background:var(--gold-dark);position:absolute;bottom:-1px;left:0;right:0}
 .ministry-feature{background:#fff;display:grid;grid-template-columns:.95fr 1.05fr;min-height:406px;margin-top:30px}
 .ministry-art{background:#213344;position:relative;overflow:hidden;display:grid;place-items:center;color:#ecd09b}
+.ministry-art.youth-photo{background:linear-gradient(0deg,#152334a8,#15233408 55%),url('/images/rev-simon-youth-concept.webp') center/cover no-repeat}.concept-photo-label{position:absolute;bottom:18px;left:22px;color:#fff;font-size:9px;letter-spacing:.16em;font-weight:700}
 .orb{position:absolute;border-radius:50%;border:1px solid #d8ae6c66}
 .orb-one{width:500px;height:500px;left:-110px;top:-168px;background:radial-gradient(circle,#d3a8672e,transparent 64%)}
 .orb-two{width:320px;height:320px;right:-100px;bottom:-140px}
@@ -117,7 +118,7 @@ p{line-height:1.7}
 .media{background:#fffdf9}
 .media-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:25px}
 .media-main{background:#f7f4ed}
-.media-image{height:335px;display:grid;place-items:center;position:relative;background:linear-gradient(#19273819,#111f2d66),url('/images/worship-concept.webp') center/cover}
+.media-image{height:335px;display:grid;place-items:center;position:relative;background:linear-gradient(#19273819,#111f2d66),url('/images/rev-simon-crusade-concept.webp') center/cover}
 .play-circle{height:66px;width:66px;border:1px solid #fff9;border-radius:50%;display:grid;place-items:center;color:#fff;background:#ffffff26}
 .sample-tag{position:absolute;left:22px;bottom:20px;background:#fffdf9;padding:8px 10px;color:#7f653b;font-size:9px;letter-spacing:.12em;font-weight:700}
 .media-caption{display:flex;align-items:center;justify-content:space-between;padding:30px}
@@ -140,6 +141,7 @@ p{line-height:1.7}
 .visit-info strong,.visit-info small{display:block}
 .visit-info strong{font-size:15px;margin-bottom:8px}
 .visit-info small{font-size:12px;color:#bdc9cb;line-height:1.5}
+.visit-qr-link{display:inline-flex;align-items:center;gap:10px;margin-left:22px;color:#e6c68e;font-size:12px;font-weight:700}
 .faq{background:#f8f6f1}
 .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px}
 .faq-list{border-top:1px solid #ddd6cb}
@@ -173,7 +175,7 @@ footer{background:#101c2b;color:#fff;padding:65px 0 25px}
 .member-shell{min-height:100vh;display:grid;grid-template-columns:250px 1fr;background:#f6f5f1}
 .member-sidebar{background:#132435;color:#fff;min-height:100vh;padding:28px 19px;display:flex;flex-direction:column}
 .member-brand{margin:8px 13px 65px}
-.member-brand .brand-mark{border-color:#ddb879;color:#ddb879}
+.member-brand .brand-logo{background:#fff;border-radius:50%}
 .member-brand .brand-words small{color:#ddb879}
 .member-side-label{font-size:9px;letter-spacing:.18em;color:#a5b6bd;margin:0 13px 20px}
 .member-sidebar nav{display:grid;gap:6px}
@@ -258,7 +260,7 @@ footer{background:#101c2b;color:#fff;padding:65px 0 25px}
 .announcement{font-size:8px;letter-spacing:.08em}
 .announcement a{display:none}
 .site-header{height:70px;padding:0 20px}
-.brand-mark{height:31px;width:31px}
+.brand-logo{height:38px;width:38px}
 .brand-words strong{font-size:12px}
 .brand-words small{font-size:6px}
 .main-nav{display:none;position:absolute;top:70px;left:0;right:0;background:#fffdf9;padding:25px 24px;box-shadow:0 16px 25px #13243526;flex-direction:column;align-items:flex-start;gap:25px}
@@ -336,4 +338,42 @@ footer{background:#101c2b;color:#fff;padding:65px 0 25px}
 .member-heading h1{font-size:36px}
 .devotional-actions{flex-wrap:wrap}
 }
+/* Shareable QR tool */
+.qr-page{min-height:100vh;background:#f8f6f1}
+.qr-header{height:92px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e5ded2}
+.qr-back{display:flex;align-items:center;gap:9px;color:#596873;font-size:12px;font-weight:700}
+.qr-content{display:grid;grid-template-columns:.9fr 1.1fr;gap:90px;align-items:start;padding-top:100px;padding-bottom:120px}
+.qr-intro{padding-top:40px}
+.qr-intro h1{font-size:clamp(54px,6vw,84px);line-height:1.03;letter-spacing:-.05em;margin:25px 0}
+.qr-intro h1 em{color:#b9833c}
+.qr-intro p{color:#65727a;font-size:16px;max-width:430px}
+.qr-context{display:flex;align-items:center;gap:14px;border-top:1px solid #ded7cc;margin-top:42px;padding-top:23px;color:#8e6d3d;font-size:11px;font-weight:700}
+.qr-tool{background:#fffdf9;border:1px solid #e2dbcf;padding:35px;box-shadow:18px 18px 0 #1930440a}
+.qr-tool-heading{display:flex;justify-content:space-between;font-size:9px;letter-spacing:.17em;color:#a57b3c;font-weight:700}
+.qr-tool h2{font-size:37px;margin:23px 0}
+.qr-presets{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:23px}
+.qr-presets button{border:1px solid #dcd6cc;background:#fff;padding:10px 13px;color:#66747c;font-size:11px;font-weight:700}
+.qr-presets button.active{background:#203749;border-color:#203749;color:#fff}
+.qr-destination{display:grid;gap:8px;padding:15px;background:#f5f1e9;min-width:0}
+.qr-destination>span{display:flex;align-items:center;gap:7px;font-size:10px;font-weight:700;color:#9c7540}
+.qr-destination code{font-family:'DM Sans',sans-serif;font-size:12px;overflow-wrap:anywhere;color:#334b57}
+.qr-url-label{display:grid;gap:8px;font-size:10px;letter-spacing:.08em;font-weight:700;color:#976d34}
+.qr-url-label input{width:100%;border:1px solid #d8d1c5;background:#fff;padding:12px 13px;color:#263d49;font-size:13px;letter-spacing:0}
+.qr-error{color:#a6372e!important;font-size:11px!important;margin:8px 0 0}
+.qr-warning{padding:12px 14px;background:#fff0d5;color:#826020;font-size:11px;line-height:1.5;margin:13px 0 0}
+.qr-preview{display:flex;align-items:center;gap:24px;margin:25px 0;padding:22px;border:1px solid #e7e1d7}
+.qr-preview-image{width:210px;height:210px;display:grid;place-items:center;flex:none;background:#fff}
+.qr-preview-image img{width:100%;height:100%;object-fit:contain}
+.qr-preview-image>span{font-size:11px;color:#8a9498;text-align:center;padding:20px}
+.qr-preview-copy{display:grid;justify-items:start;gap:7px;min-width:0}
+.qr-preview-copy strong{font-size:15px;line-height:1.1;letter-spacing:.06em}
+.qr-preview-copy small{font-size:9px;color:#af7839;letter-spacing:.1em;font-weight:700}
+.qr-preview-copy>span{font-family:'Playfair Display',serif;font-size:21px;margin-top:13px;color:#203749}
+.qr-actions{display:flex;align-items:center;gap:20px}
+.qr-actions button:disabled{opacity:.5;cursor:not-allowed}
+.qr-copy{display:flex;align-items:center;gap:8px;border:0;background:none;color:#8a642e;font-size:12px;font-weight:700}
+.qr-footnote{font-size:10px;color:#879299;line-height:1.55;margin:23px 0 0}
+@media(max-width:900px){.qr-content{gap:35px}.qr-preview{gap:13px}.qr-preview-image{width:160px;height:160px}}
+@media(max-width:700px){.qr-header{height:74px}.qr-content{grid-template-columns:1fr;padding-top:38px;padding-bottom:85px;gap:30px}.qr-intro{padding-top:0}.qr-intro h1{font-size:55px}.qr-intro p{font-size:14px}.qr-context{margin-top:27px}.qr-tool{padding:22px}.qr-tool h2{font-size:32px}.qr-preview-image{width:150px;height:150px}.qr-preview-copy strong{font-size:12px}.qr-preview-copy>span{font-size:17px}.visit-qr-link{display:flex;margin:20px 0 0}}
+@media(max-width:390px){.qr-back{font-size:0}.qr-back svg{width:19px;height:19px}.qr-preview{padding:12px;gap:10px}.qr-preview-image{width:130px;height:130px}.qr-preview-copy img{width:38px;height:38px}.qr-actions{gap:8px}.qr-actions .button{padding:13px 12px}}
 
