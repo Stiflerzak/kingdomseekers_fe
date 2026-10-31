@@ -27,7 +27,7 @@ The public website is phase one. A mobile app or installable PWA can reuse the s
 | Community | Ministries, youth, children, serving, projects | Fellowship finder, event RSVP, approved directory | Group discussion and team scheduling |
 | Discipleship | Preview tracks and devotionals | Daily devotionals, Bible reading, courses, quizzes, notes and progress | Cohort pathways, mentor check-ins, certificates where useful |
 | Care | Prayer request, consent-aware follow-up | Prayer updates, pastoral appointments | Care workflows and referral routing |
-| Giving | Clear, verified giving information | Giving history only if the payment provider supports it securely | Project funding pages with transparent updates |
+| Giving | Purpose selection for tithe, offering, sacrifice or project; verified M-Pesa/RTGS instructions; PDQ availability status | Giving history only if the payment provider supports it securely | Project funding pages with transparent updates |
 | Communications | News and social links | Opt-in notifications and reminders | Audience-based campaigns, WhatsApp integration where permitted |
 | Creator tools | — | — | Transcript, chapter suggestions, vertical reframing, captions, clip drafts, approval queue and export |
 
@@ -98,10 +98,10 @@ Next.js public site / member web app / future mobile app
 
 1. Official branch name and styling, approved logo, colours and typography; whether Nakuru brand assets may be reused. Public references use both “Eastern Bypass” and “Utawala,” so confirm which label the branch wants online.
 2. Rev. Simon Chege’s approved title/bio and the exact wording of the relationship to Apostle John Kimani William and Nakuru headquarters.
-3. Verified service times, location pin, phone/WhatsApp, email, social pages and livestream channels.
+3. Verified service times, location pin, phone/WhatsApp, email, social pages and livestream channels. For Thursday youth street praise at Mwihoko Market, confirm the start time, meeting point and event contact.
 4. Approved photography/video, usage rights, and people’s consent, especially children and youth.
 5. Who owns publishing, pastoral requests, group data, event approvals and media review.
-6. Which giving methods and projects can be shown, with verified beneficiary and financial reporting details.
+6. Which giving methods and projects can be shown, with verified beneficiary and financial reporting details. Confirm whether a PDQ terminal will be available before changing its “Coming soon” label.
 7. English/Kiswahili priority and whether another language is needed.
 8. Which verified link the default QR code should open: the branch homepage, a first-visit page, a map pin or another destination. Avoid printing QR codes before the final URL exists.
 9. Confirm the Equity Bank account number and recipient name for Paybill 247247. Keep payment instructions inactive until both match church finance records.
@@ -109,4 +109,4 @@ Next.js public site / member web app / future mobile app
 
 ## Prototype limitations
 
-The current Next.js build is an interactive concept with sample content. Forms do not submit. Devotional and group demo state resets on refresh; course progress persists only on the current device. SEO crawling is blocked until verified content and a real domain are supplied. The QR tool generates real codes, but localhost destinations are unsuitable for print or distribution. Giving has no payment action because the account number is missing. Event dates, project budgets and evangelism counts are placeholders. The generated worship, prayer, praise-team and Rev. Simon scenes are illustrative composites and must be approved or replaced with real photography for production. The supplied SVG logo contains a small embedded raster image and is not a true vector master.
+The current Next.js build is an interactive concept with sample content. The member login, MFA code and USSD-style partner message are browser-only simulations; no account is verified and no message or payment is sent. Forms do not submit. Devotional and group demo state resets on refresh; course progress persists only on the current device. SEO crawling is blocked until verified content and a real domain are supplied. The QR tool generates real codes, but localhost destinations are unsuitable for print or distribution. Giving has no payment action because the account number is missing. Thursday evening street praise was supplied by the branch requester; its exact start time and meeting point remain pending. Project budgets and evangelism counts are placeholders. The generated worship, prayer, praise-team and Rev. Simon scenes are illustrative composites and must be approved or replaced with real photography for production. The supplied SVG logo contains a small embedded raster image and is not a true vector master.
