@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
+:root{--navy:#111c2b;--navy-2:#1a2a3a;--gold:#d6a95f;--gold-dark:#b5843b;--cream:#f8f5ef;--paper:#fffdf9;--ink:#172332;--muted:#65717b;--line:#e6e1d8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:'DM Sans',Arial,sans-serif;background:var(--paper)}
+button,input,select{font:inherit}
+button{cursor:pointer}
+a{text-decoration:none;color:inherit}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #bd873c;outline-offset:3px}
+.container{width:min(1220px,calc(100% - 80px));margin-inline:auto}
+.section-pad{padding:112px 0}
+.eyebrow,.small-caps{display:flex;align-items:center;gap:13px;font-size:11px;font-weight:700;letter-spacing:.18em;color:var(--gold-dark)}
+.eyebrow.light{color:#e2bd80}
+.eyebrow-line{height:1px;width:24px;background:currentColor}
+h1,h2,h3,p{margin-top:0}
+h1,h2,h3{font-weight:500}
+h1,h2{font-family:'Playfair Display',Georgia,serif}
+h2{font-size:clamp(43px,5vw,72px);line-height:1.1;letter-spacing:-.04em;margin:24px 0}
+h2 em,h1 em{font-weight:500;color:var(--gold-dark)}
+p{line-height:1.7}
+.button{border:0;padding:16px 24px;display:inline-flex;align-items:center;justify-content:center;gap:20px;font-weight:700;font-size:13px;transition:transform .2s,background .2s}
+.button:hover{transform:translateY(-2px)}
+.button-gold{background:var(--gold);color:#1a2631}
+.button-gold:hover{background:#edc487}
+.button-outline{border:1px solid #d4ad70;color:#fff;background:transparent}
+.button-outline:hover{background:#ffffff16}
+.inline-link,.text-link{display:inline-flex;align-items:center;gap:14px;color:var(--gold-dark);font-size:13px;font-weight:700;border:0;background:none;padding:0}
+.inline-link:hover,.text-link:hover{gap:19px}
+.light-link{color:#f0d19f}
+.announcement{height:32px;display:flex;align-items:center;justify-content:center;gap:12px;background:#102333;color:#d7e1e4;font-size:9px;font-weight:700;letter-spacing:.17em}
+.announcement a{display:inline-flex;align-items:center;gap:5px;color:#eac17f;letter-spacing:0;text-transform:none;font-size:10px}
+.live-dot{width:5px;height:5px;border-radius:50%;background:#edbe6a;box-shadow:0 0 0 4px #edbe6a25}
+.site-header{height:91px;padding:0 max(40px,calc((100vw - 1220px)/2));display:flex;align-items:center;justify-content:space-between;background:#fffdf9;position:relative;z-index:20;border-bottom:1px solid #eee9df}
+.brand{display:inline-flex;align-items:center;gap:11px;width:max-content}
+.brand-mark{width:37px;height:37px;border:1px solid var(--gold-dark);display:grid;place-items:center;transform:rotate(45deg);color:var(--gold-dark)}
+.brand-mark span{transform:rotate(-45deg);font-size:25px;line-height:1}
+.brand-words{display:flex;flex-direction:column;gap:4px}
+.brand-words strong{font-size:14px;line-height:.9;letter-spacing:.13em;font-weight:700}
+.brand-words small{font-size:7px;letter-spacing:.26em;color:var(--gold-dark);font-weight:700}
+.main-nav,.header-actions{display:flex;align-items:center}
+.main-nav{gap:36px;font-size:12px;font-weight:700}
+.main-nav a:hover{color:var(--gold-dark)}
+.header-actions{gap:27px}
+.member-link{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:700}
+.header-visit{padding:13px 19px}
+.menu-button,.mobile-member{display:none}
+.hero{height:min(710px,calc(100vh - 123px));min-height:590px;position:relative;background:#182437;color:white;overflow:hidden}
+.hero-image,.hero-shade{position:absolute;inset:0}
+.hero-image{background:url('/images/worship-concept.webp') center 43%/cover no-repeat}
+.hero-shade{background:linear-gradient(90deg,rgba(9,20,33,.88) 0%,rgba(9,20,33,.65) 39%,rgba(9,20,33,.08) 80%),linear-gradient(0deg,rgba(9,20,33,.42),transparent 32%)}
+.hero-content{position:relative;z-index:1;padding-top:122px}
+.hero h1{font-size:clamp(70px,7vw,112px);line-height:.98;letter-spacing:-.05em;margin:29px 0 26px}
+.hero h1 em{color:#edc485}
+.hero-content p{max-width:445px;color:#f2f1ed;font-size:15px;line-height:1.75}
+.hero-actions{display:flex;align-items:center;gap:33px;margin-top:30px}
+.hero-footer{position:absolute;z-index:1;bottom:27px;left:max(40px,calc((100vw - 1220px)/2));right:max(40px,calc((100vw - 1220px)/2));display:flex;align-items:center;justify-content:space-between;color:#e6e9e8;font-size:9px;letter-spacing:.14em;font-weight:700}
+.hero-footer span{display:flex;align-items:center;gap:9px}
+.intro{background:var(--paper)}
+.intro-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:80px;align-items:end}
+.intro h2{margin-bottom:0}
+.intro-copy p{font-size:17px;color:#5c6771;line-height:1.75}
+.intro-copy .inline-link{margin-top:15px}
+.pathways{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);margin-top:67px}
+.pathway{padding:32px 34px 35px;min-height:265px;border-right:1px solid var(--line);transition:background .2s}
+.pathway:last-child{border:0}
+.pathway:hover{background:#faf4e9}
+.pathway-top{display:flex;justify-content:space-between;color:var(--gold-dark)}
+.pathway-top span{font-family:Georgia,serif;color:#b7ac9c;font-size:18px}
+.pathway h3{font-family:'Playfair Display',serif;font-size:26px;margin:35px 0 9px}
+.pathway p{font-size:13px;color:#717980;line-height:1.6;max-width:280px}
+.pathway-link{display:inline-flex;gap:12px;align-items:center;color:var(--gold-dark);font-size:12px;font-weight:700;margin-top:17px}
+.feature-band{display:grid;grid-template-columns:1fr 1fr;min-height:540px;background:var(--navy);color:#fff}
+.feature-photo{position:relative;background:url('/images/worship-concept.webp') 76% center/cover no-repeat}
+.feature-photo:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#101c2b91,transparent 50%)}
+.photo-label{position:absolute;z-index:1;bottom:30px;left:38px;font-size:9px;letter-spacing:.18em;font-weight:700}
+.feature-copy{padding:82px min(8vw,116px) 80px 85px;max-width:700px}
+.feature-copy h2{font-size:clamp(42px,4.7vw,68px)}
+.feature-copy h2 em,.discipleship h2 em,.visit h2 em{color:#e4ba79}
+.feature-copy p{color:#bfc8cc;font-size:14px;max-width:475px}
+.feature-copy .text-link{margin-top:16px}
+.section-heading{display:flex;justify-content:space-between;align-items:end;gap:50px;margin-bottom:45px}
+.section-heading h2{margin-bottom:0}
+.section-heading>p{max-width:350px;margin-bottom:5px;font-size:15px;color:#65717b}
+.community{background:#f8f6f1}
+.ministry-tabs{display:flex;border-bottom:1px solid #ddd7cc;gap:35px}
+.ministry-tabs button{border:0;background:transparent;padding:0 0 16px;color:#77818a;font-weight:700;font-size:13px;position:relative}
+.ministry-tabs button.active{color:var(--ink)}
+.ministry-tabs button.active:after{content:'';height:2px;background:var(--gold-dark);position:absolute;bottom:-1px;left:0;right:0}
+.ministry-feature{background:#fff;display:grid;grid-template-columns:.95fr 1.05fr;min-height:406px;margin-top:30px}
+.ministry-art{background:#213344;position:relative;overflow:hidden;display:grid;place-items:center;color:#ecd09b}
+.orb{position:absolute;border-radius:50%;border:1px solid #d8ae6c66}
+.orb-one{width:500px;height:500px;left:-110px;top:-168px;background:radial-gradient(circle,#d3a8672e,transparent 64%)}
+.orb-two{width:320px;height:320px;right:-100px;bottom:-140px}
+.ministry-art-text{z-index:1;display:grid;justify-items:center;gap:16px;text-align:center}
+.ministry-art-text span{font-family:'Playfair Display',serif;font-size:54px;line-height:1.04;letter-spacing:.09em}
+.ministry-text{padding:64px 70px}
+.ministry-text h3{font-family:'Playfair Display',serif;font-size:45px;line-height:1.13;margin:22px 0 14px}
+.ministry-text>p{color:#64717a;font-size:15px;max-width:440px}
+.ministry-note{display:flex;gap:12px;align-items:flex-start;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0;margin:27px 0;color:#66727a;font-size:12px;line-height:1.55}
+.ministry-note svg{color:var(--gold-dark);flex:none}
+.discipleship{background:#112130;color:#fff}
+.discipleship-grid{display:grid;grid-template-columns:1fr 440px;align-items:center;gap:130px}
+.discipleship-grid>div:first-child>p{color:#bdcbd0;font-size:15px;max-width:525px}
+.learning-list{display:grid;gap:15px;margin:32px 0 38px}
+.learning-list div{display:flex;align-items:center;gap:15px;font-size:13px;color:#e4e9e8}
+.learning-list svg{color:#d7b47b}
+.lesson-card{background:#fbf8f1;color:var(--ink);padding:30px 35px 0;box-shadow:18px 18px 0 #d4a76016}
+.lesson-top{display:flex;justify-content:space-between;font-size:9px;color:#937442;letter-spacing:.15em;font-weight:700}
+.lesson-icon{margin:60px 0 34px;color:#b9873d;width:68px;height:68px;border:1px solid #d8c39e;display:grid;place-items:center}
+.lesson-meta{font-size:10px;letter-spacing:.16em;color:#b5843b;font-weight:700}
+.lesson-card h3{font-family:'Playfair Display',serif;font-size:36px;margin:13px 0}
+.lesson-card p{color:#67747a;font-size:13px}
+.progress-label{display:flex;justify-content:space-between;font-size:11px;margin:33px 0 10px}
+.progress-track{height:5px;background:#e9e5dd}
+.progress-track span{display:block;background:var(--gold-dark);height:100%;width:33%}
+.lesson-card button{display:flex;justify-content:space-between;width:calc(100% + 70px);margin:31px -35px 0;padding:22px 35px;border:0;background:#d8ab64;color:#172332;font-size:12px;font-weight:700}
+.media{background:#fffdf9}
+.media-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:25px}
+.media-main{background:#f7f4ed}
+.media-image{height:335px;display:grid;place-items:center;position:relative;background:linear-gradient(#19273819,#111f2d66),url('/images/worship-concept.webp') center/cover}
+.play-circle{height:66px;width:66px;border:1px solid #fff9;border-radius:50%;display:grid;place-items:center;color:#fff;background:#ffffff26}
+.sample-tag{position:absolute;left:22px;bottom:20px;background:#fffdf9;padding:8px 10px;color:#7f653b;font-size:9px;letter-spacing:.12em;font-weight:700}
+.media-caption{display:flex;align-items:center;justify-content:space-between;padding:30px}
+.media-caption h3{font-family:'Playfair Display',serif;font-size:29px;margin:10px 0 3px}
+.media-caption p{font-size:13px;color:#7a8388;margin:0}
+.media-side{display:grid;gap:20px}
+.media-side-card{background:#192c3d;color:#fff;padding:30px;display:flex;flex-direction:column;align-items:flex-start}
+.media-side-card svg{color:#d4a966;margin-bottom:20px}
+.media-side-card span{font-size:9px;letter-spacing:.15em;font-weight:700;color:#dcb97d}
+.media-side-card h3{font-family:'Playfair Display',serif;font-size:27px;line-height:1.14;margin:9px 0}
+.media-side-card p{font-size:12px;color:#bcc9cf;margin-bottom:0}
+.media-side-card.cream{background:#f0e8dc;color:#172332}
+.media-side-card.cream p{color:#65717b}
+.visit{background:#213343;color:#fff}
+.visit-grid{display:grid;grid-template-columns:1fr .8fr;gap:140px;align-items:center}
+.visit-grid>div:first-child>p{color:#bbc8cc;max-width:450px;margin-bottom:27px}
+.visit-info{border-top:1px solid #ffffff38}
+.visit-info>div{display:flex;gap:20px;border-bottom:1px solid #ffffff38;padding:27px 0}
+.visit-info svg{color:#d6ac70;flex:none}
+.visit-info strong,.visit-info small{display:block}
+.visit-info strong{font-size:15px;margin-bottom:8px}
+.visit-info small{font-size:12px;color:#bdc9cb;line-height:1.5}
+.faq{background:#f8f6f1}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px}
+.faq-list{border-top:1px solid #ddd6cb}
+.faq-item{border-bottom:1px solid #ddd6cb}
+.faq-item button{width:100%;background:none;border:0;display:flex;justify-content:space-between;align-items:center;padding:25px 0;text-align:left;font-weight:700;color:var(--ink)}
+.faq-item svg{transition:transform .2s}
+.faq-item svg.rotated{transform:rotate(180deg)}
+.faq-item p{font-size:13px;color:#67747a;padding-right:35px;margin:0 0 25px}
+footer{background:#101c2b;color:#fff;padding:65px 0 25px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}
+.footer-brand .brand-words small{color:#d8ac68}
+.footer-grid p{font-size:12px;color:#b1bdc2;max-width:260px;margin:25px 0}
+.footer-grid>div:not(:first-child){display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.footer-grid a,.footer-grid button{font-size:12px;color:#c9d1d2}
+.footer-grid button{border:0;background:none;padding:0}
+.footer-title{color:#d8b17b;font-size:9px;letter-spacing:.17em;font-weight:700;margin-bottom:9px}
+.footer-bottom{border-top:1px solid #ffffff25;margin-top:60px;padding-top:24px;display:flex;justify-content:space-between;color:#899ba4;font-size:10px}
+.modal-backdrop{position:fixed;z-index:50;inset:0;background:#091722bb;display:grid;place-items:center;padding:20px}
+.visit-modal{background:#fffdf9;width:min(500px,100%);max-height:90vh;overflow-y:auto;padding:38px;position:relative;box-shadow:0 25px 90px #0004}
+.modal-close{position:absolute;right:20px;top:20px;background:none;border:0;color:#354652}
+.visit-modal h2{font-size:43px;margin:18px 0 12px}
+.visit-modal p{font-size:13px;color:#65717b}
+.visit-modal form{display:grid;gap:15px;margin-top:25px}
+.visit-modal label{display:grid;gap:7px;font-size:11px;font-weight:700}
+.visit-modal input,.visit-modal select{width:100%;padding:12px;border:1px solid #d7d2c8;background:#fff;color:#172332;border-radius:0}
+.visit-modal form .button{margin-top:6px}
+.success-icon{width:50px;height:50px;background:#d8ad6b;display:grid;place-items:center}
+.success-state .button{margin-top:15px}
+
+/* Member experience */
+.member-shell{min-height:100vh;display:grid;grid-template-columns:250px 1fr;background:#f6f5f1}
+.member-sidebar{background:#132435;color:#fff;min-height:100vh;padding:28px 19px;display:flex;flex-direction:column}
+.member-brand{margin:8px 13px 65px}
+.member-brand .brand-mark{border-color:#ddb879;color:#ddb879}
+.member-brand .brand-words small{color:#ddb879}
+.member-side-label{font-size:9px;letter-spacing:.18em;color:#a5b6bd;margin:0 13px 20px}
+.member-sidebar nav{display:grid;gap:6px}
+.member-sidebar nav button{display:flex;align-items:center;gap:13px;text-align:left;background:transparent;border:0;color:#b6c3c8;padding:14px 15px;font-size:13px;font-weight:600}
+.member-sidebar nav button.active{background:#d8ad69;color:#172a3a}
+.member-sidebar nav button svg:last-child{margin-left:auto}
+.sidebar-bottom{margin-top:auto;padding:25px 13px}
+.sidebar-bottom p{font-family:'Playfair Display',serif;color:#e7cc9a;font-size:20px}
+.sidebar-bottom a{display:flex;align-items:center;gap:9px;color:#b8c5c9;font-size:11px}
+.member-main{min-width:0}
+.member-topbar{height:80px;border-bottom:1px solid #e7e4de;background:#fffdf9;display:flex;align-items:center;justify-content:space-between;padding:0 40px;font-size:12px;color:#71808a}
+.member-topbar>div{display:flex;align-items:center;gap:20px}
+.prototype-badge{font-size:9px;letter-spacing:.15em;color:#986e31;font-weight:700;border:1px solid #e4d3b5;padding:7px 10px}
+.avatar{border-radius:50%;width:35px;height:35px;display:grid;place-items:center;background:#233b4a;color:#fff;font-size:10px;font-weight:700}
+.member-content{max-width:1230px;margin:auto;padding:48px 50px 90px}
+.member-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:36px}
+.member-heading .eyebrow{font-size:10px;color:#b58644}
+.member-heading h1{font-size:49px;line-height:1.1;margin:13px 0 9px}
+.member-heading p{color:#7a858b;font-size:13px;margin:0}
+.member-date{text-align:right;font-size:9px;color:#a2804c;letter-spacing:.13em}
+.member-date strong{display:block;color:#60717b;font-size:11px;letter-spacing:0;margin-top:7px}
+.member-hero{background:#203b4b;color:#fff;min-height:250px;display:flex;justify-content:space-between;overflow:hidden}
+.member-hero-copy{padding:37px 44px;z-index:1}
+.member-hero-copy>span,.card-eyebrow{font-size:10px;letter-spacing:.16em;font-weight:700;color:#caa36a}
+.member-hero h2{font-size:42px;margin:14px 0 7px}
+.member-hero p{font-size:13px;color:#d2ddde;margin-bottom:22px}
+.member-hero button{border:0;background:none;padding:0;display:flex;align-items:center;gap:12px;color:#edc98c;font-weight:700;font-size:12px}
+.member-hero-art{width:36%;min-width:200px;display:grid;place-items:center;position:relative;color:#eac886;background:radial-gradient(circle at 50% 50%,#bd965541 0,transparent 55%)}
+.member-hero-art:before,.member-hero-art:after{content:'';border:1px solid #e2b67b45;border-radius:50%;position:absolute;width:230px;height:230px}
+.member-hero-art:after{width:330px;height:330px}
+.member-hero-art span{position:absolute;right:30px;top:25px;font-family:Georgia,serif;color:#ffffff55}
+.dashboard-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:23px}
+.dashboard-card,.content-panel{background:#fffdf9;border:1px solid #e9e5dd;padding:29px}
+.card-eyebrow{display:flex;align-items:center;gap:9px;color:#af813e}
+.dashboard-card h3,.content-panel h2,.content-panel h3{font-family:'Playfair Display',serif}
+.dashboard-card h3{font-size:27px;margin:26px 0 9px}
+.dashboard-card p{font-size:12px;color:#758187;min-height:60px}
+.dashboard-card .progress-label{margin:23px 0 9px}
+.dashboard-card .inline-link{margin-top:25px}
+.member-two-col{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:22px}
+.member-two-col>div:first-child{display:grid;gap:20px}
+.content-panel h2{font-size:35px;margin:22px 0 10px}
+.content-panel h3{font-size:26px;margin:15px 0 10px}
+.content-panel p{font-size:13px;color:#6d7a82}
+.devotional .scripture{font-family:'Playfair Display',serif;font-size:26px;color:#273c49;margin:25px 0 2px}
+.devotional>span{font-size:9px;letter-spacing:.17em;color:#a67d41;font-weight:700}
+.devotional>p:last-of-type{margin-top:26px;max-width:600px}
+.devotional-actions{display:flex;gap:10px;margin-top:25px}
+.pill{display:flex;align-items:center;gap:8px;border:1px solid #dcd6cb;background:#fff;padding:10px 15px;font-size:11px;font-weight:700;color:#52636b}
+.pill.active{background:#f3e7d3;color:#95682d;border-color:#d6af74}
+.lesson-row{border-top:1px solid #eee9e1;display:flex;align-items:center;gap:12px;padding:14px 0;font-size:12px}
+.lesson-row span{background:#f1e9db;color:#aa7f44;display:grid;place-items:center;width:25px;height:25px;font-size:10px}
+.lesson-row strong{margin-left:auto;font-size:9px;color:#a7814b}
+.lesson-row.done{color:#6c797d}
+.side-panel{align-self:start;background:#f3eee4}
+.side-panel .metric{border-top:1px solid #dfd5c6;padding:18px 0;display:flex;align-items:center;gap:14px}
+.metric strong{font-family:'Playfair Display',serif;font-size:30px;color:#986e31}
+.metric span{font-size:11px;color:#68777d}
+.group-card,.event-card{display:flex;gap:20px;border:1px solid #e5ddd0;padding:20px;margin-top:25px}
+.group-card>div:last-child>span,.event-card>div:last-child>span{font-size:9px;letter-spacing:.15em;color:#aa7c3a;font-weight:700}
+.group-card h3,.event-card h3{margin:9px 0 5px}
+.group-card p,.event-card p{margin:0 0 13px}
+.group-art,.event-date{width:100px;min-width:100px;min-height:110px;background:#243e4d;color:#ecc890;display:grid;place-items:center}
+.event-date{display:flex;flex-direction:column;gap:10px;text-align:center;font-size:10px;letter-spacing:.1em}
+.member-disclaimer{margin-top:35px;border-top:1px solid #e4e0d8;padding-top:18px;font-size:10px;color:#879198}
+.bottom-nav,.member-menu{display:none}
+
+@media(max-width:1000px){.main-nav{gap:20px}
+.header-actions{gap:14px}
+.member-link{display:none}
+.discipleship-grid{gap:50px}
+.visit-grid{gap:60px}
+.feature-copy{padding:70px 50px}
+.member-shell{grid-template-columns:210px 1fr}
+.member-content{padding:40px 30px}
+.dashboard-grid{grid-template-columns:1fr 1fr}
+.dashboard-card:last-child{grid-column:span 2}
+}
+
+@media(max-width:700px){.container{width:min(100% - 36px,540px)}
+.section-pad{padding:75px 0}
+.announcement{font-size:8px;letter-spacing:.08em}
+.announcement a{display:none}
+.site-header{height:70px;padding:0 20px}
+.brand-mark{height:31px;width:31px}
+.brand-words strong{font-size:12px}
+.brand-words small{font-size:6px}
+.main-nav{display:none;position:absolute;top:70px;left:0;right:0;background:#fffdf9;padding:25px 24px;box-shadow:0 16px 25px #13243526;flex-direction:column;align-items:flex-start;gap:25px}
+.main-nav.open{display:flex}
+.mobile-member{display:block}
+.header-visit{display:none}
+.menu-button{display:grid;place-items:center;border:0;background:transparent;color:#233848;padding:7px}
+.hero{height:690px;min-height:0}
+.hero-image{background-position:62% center}
+.hero-shade{background:linear-gradient(90deg,#091522d9,#09152258),linear-gradient(0deg,#0915229c,transparent 50%)}
+.hero-content{padding-top:112px}
+.hero h1{font-size:clamp(64px,14vw,87px)}
+.hero-content p{max-width:340px;font-size:14px}
+.hero-actions{align-items:flex-start;flex-direction:column;gap:25px}
+.hero-footer{left:18px;right:18px;bottom:18px;font-size:8px}
+.hero-footer span:nth-child(2),.hero-footer span:nth-child(3){display:none}
+.intro-grid,.feature-band,.ministry-feature,.discipleship-grid,.media-grid,.visit-grid,.faq-grid{grid-template-columns:1fr}
+.intro-grid{gap:27px}
+.intro h2{margin-bottom:10px}
+.intro-copy p{font-size:15px}
+.pathways{grid-template-columns:1fr;margin-top:40px}
+.pathway{min-height:0;padding:25px;border-right:0;border-bottom:1px solid var(--line)}
+.pathway:last-child{border:0}
+.pathway h3{margin-top:20px}
+.feature-photo{height:270px}
+.feature-copy{padding:55px 25px 65px}
+.feature-copy h2{font-size:47px}
+.section-heading{display:block}
+.section-heading>p{margin-top:20px}
+.ministry-tabs{overflow-x:auto;gap:28px}
+.ministry-tabs button{white-space:nowrap}
+.ministry-art{min-height:260px}
+.ministry-art-text span{font-size:42px}
+.ministry-text{padding:38px 25px}
+.ministry-text h3{font-size:38px}
+.discipleship-grid{gap:50px}
+.lesson-card{max-width:470px}
+.media-image{height:240px}
+.media-side{grid-template-columns:1fr}
+.visit-grid{gap:50px}
+.faq-grid{gap:25px}
+.footer-grid{grid-template-columns:1fr 1fr}
+.footer-grid>div:first-child{grid-column:span 2}
+.footer-bottom{display:block;line-height:1.6}
+.footer-bottom span{display:block;margin-top:8px}
+.member-shell{display:block}
+.member-sidebar{display:none;position:fixed;z-index:30;width:250px;min-height:100vh;top:0;bottom:0;box-shadow:20px 0 40px #0004}
+.member-sidebar.open{display:flex}
+.member-topbar{height:64px;padding:0 18px;gap:10px}
+.member-topbar>span{font-size:10px;margin-right:auto}
+.member-menu{display:grid}
+.prototype-badge{display:none}
+.member-content{padding:30px 18px 100px}
+.member-heading{display:block}
+.member-heading h1{font-size:41px}
+.member-date{display:none}
+.member-hero-copy{padding:30px 25px}
+.member-hero h2{font-size:38px}
+.member-hero-art{min-width:100px;width:28%}
+.member-hero-art svg{width:45px}
+.dashboard-grid,.member-two-col{grid-template-columns:1fr}
+.dashboard-card:last-child{grid-column:auto}
+.dashboard-card p{min-height:0}
+.member-two-col>div:first-child{gap:16px}
+.bottom-nav{display:flex;position:fixed;z-index:20;bottom:0;left:0;right:0;background:#fffdf9;border-top:1px solid #e6e2d9;justify-content:space-around;padding:9px 6px max(9px,env(safe-area-inset-bottom))}
+.bottom-nav button{display:grid;justify-items:center;gap:4px;border:0;background:none;color:#879198;font-size:9px;min-width:60px}
+.bottom-nav button.active{color:#9d7134}
+.group-card,.event-card{gap:13px}
+.group-art,.event-date{width:70px;min-width:70px}
+}
+
+@media(max-width:390px){.hero h1{font-size:58px}
+.hero-actions .button{padding:14px 18px}
+.member-topbar>span{display:none}
+.member-heading h1{font-size:36px}
+.devotional-actions{flex-wrap:wrap}
+}
+
