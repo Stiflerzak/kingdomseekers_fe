@@ -16,7 +16,8 @@ Open `http://localhost:3000`. Run `npm run build` for a static production build 
 - Public home: welcome, branch story, first-visit flow, ministry tabs, discipleship, media concept, location and FAQs.
 - Four-slide animated carousel: Matthew 6:33, praise and worship, prayer, and Thursday youth street praise. Slides advance every five seconds and include play/pause, keyboard, swipe, and reduced-motion controls. The scripture uses a short King James Version excerpt.
 - Visual interaction: a short logo loading screen, crossfading carousel images, moving sermon/event strip, responsive hover/focus states, and reduced-motion support.
-- Events and projects: Thursday evening youth street praise at Mwihoko Market, plus sound system and evangelism project concepts. The exact event start time, project budgets and souls-won figures are not invented.
+- Events and projects: Thursday evening youth street praise at Mwihoko Market, with two AI concept images and [Psalm 16:5 (KJV)](https://www.bible.com/bible/1/PSA.16.5.KJV), plus sound system and evangelism project concepts. The exact event start time, project budgets and souls-won figures are not invented.
+- Testimonies: a moving strip at the top displays three fictional, clearly labelled sample quotes. Replace them with approved member stories before launch.
 - Giving: a prominent header button opens Tithe, Offering, Sacrifice, and Project choices. SVG cards preview M-Pesa, RTGS, and a PDQ terminal marked coming soon. The supplied Paybill **247247** is shown with the account-number-pending state. No payment action is enabled.
 - Sermons: a responsive layered gallery with an embedded [Rev Simon Mwangi Chege sermon](https://www.youtube.com/watch?v=-otUcXwUwrw), arrows, swipe controls, and [channel links](https://www.youtube.com/channel/UCiJ8sLxT1g_O4IvfAmdULhw). The gallery photos are concept images, not YouTube thumbnails.
 - Member preview: sample login (PIN `2468`), sample MFA code (`123456`), dashboard, devotionals, fellowships, event interest, and a Partner tab with a USSD-style menu and sample contribution message. Authentication and messages are simulated in the browser; no real credentials, SMS, USSD session or payment are processed.
@@ -25,7 +26,7 @@ Open `http://localhost:3000`. Run `npm run build` for a static production build 
 - QR generator: website, visit and member presets based on the current origin, plus a custom URL. It creates a vector SVG in the browser and allows download or link copying. Localhost codes will not work on another phone; enter the published URL before printing.
 - SEO foundation: semantic sections, descriptive metadata, responsive layout. Crawling is intentionally disabled until real branch content and the final domain are approved.
 - Supplied church logo and Rev. Simon portrait are in `public/images/`. The supplied `logo.svg` embeds a 162×162 PNG rather than vector paths, so large print use needs a true vector original. The generated worship and Rev. Simon scenes are **concept images**, not documentary photography of Kingdom Seekers events. Replace or approve them before launch. Photographs are compressed WebP; icons and QR output are SVG.
-- The added prayer and worship-team images are also generated concept images. All generated scenes need branch approval before publication.
+- The added prayer, worship-team and Mwihoko Market images are generated concept images. They do not document the actual event. All generated scenes need branch approval before publication.
 
 ## Content truth
 

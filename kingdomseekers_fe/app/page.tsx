@@ -5,6 +5,7 @@ import Link from 'next/link';
 import HeroCarousel from './HeroCarousel';
 import GivingDialog from './GivingDialog';
 import SermonGallery from './SermonGallery';
+import TestimonyRibbon from './TestimonyRibbon';
 import { ScriptureSection, EventsSection, ProjectsSection, MobileAppSection } from './ExtraSections';
 import { ArrowDown, ArrowRight, BookOpen, CalendarDays, Check, ChevronDown, Church, Clock3, Headphones, Heart, HeartHandshake, MapPin, Menu, Play, Plus, Radio, Sparkles, Users, X } from 'lucide-react';
 
@@ -32,6 +33,7 @@ export default function Home() {
 
   return <>
     <div className="announcement"><span className="live-dot" /> A NEW DIGITAL HOME FOR EASTERN BYPASS <a href="#vision">Explore the vision <ArrowRight size={13} /></a></div>
+    <TestimonyRibbon/>
     <header className="site-header">
       <Link className="brand" href="/" aria-label="Kingdom Seekers Eastern Bypass home"><img className="brand-logo" src="/images/logo.svg" alt="" width="46" height="46"/><span className="brand-words"><strong>KINGDOM<br/>SEEKERS</strong><small>EASTERN BYPASS</small></span></Link>
       <nav className={menuOpen ? 'main-nav open' : 'main-nav'} aria-label="Main navigation">

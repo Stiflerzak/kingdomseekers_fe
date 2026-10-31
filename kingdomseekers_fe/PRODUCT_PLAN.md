@@ -99,13 +99,14 @@ Next.js public site / member web app / future mobile app
 1. Official branch name and styling, approved logo, colours and typography; whether Nakuru brand assets may be reused. Public references use both “Eastern Bypass” and “Utawala,” so confirm which label the branch wants online.
 2. Rev. Simon Chege’s approved title/bio and the exact wording of the relationship to Apostle John Kimani William and Nakuru headquarters.
 3. Verified service times, location pin, phone/WhatsApp, email, social pages and livestream channels. For Thursday youth street praise at Mwihoko Market, confirm the start time, meeting point and event contact.
-4. Approved photography/video, usage rights, and people’s consent, especially children and youth.
+4. Approved photography/video, usage rights, and people’s consent, especially children and youth. Replace the AI concept images of Mwihoko Market street praise with approved event photography when available.
 5. Who owns publishing, pastoral requests, group data, event approvals and media review.
 6. Which giving methods and projects can be shown, with verified beneficiary and financial reporting details. Confirm whether a PDQ terminal will be available before changing its “Coming soon” label.
 7. English/Kiswahili priority and whether another language is needed.
 8. Which verified link the default QR code should open: the branch homepage, a first-visit page, a map pin or another destination. Avoid printing QR codes before the final URL exists.
 9. Confirm the Equity Bank account number and recipient name for Paybill 247247. Keep payment instructions inactive until both match church finance records.
-10. Confirm event dates, sound-system budget and equipment scope, evangelism impact definitions and approved counts before publishing.
+10. Confirm the Thursday street praise start time and meeting point, sound-system budget and equipment scope, evangelism impact definitions and approved counts before publishing.
+11. Collect approved Eastern Bypass member testimonies with consent, exact wording and attribution preferences before replacing the clearly labelled fictional quotes in the top strip.
 
 ## Prototype limitations
 
